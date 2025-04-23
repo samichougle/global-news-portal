@@ -1,6 +1,3 @@
-# global-news-portal
-Real-time global news platform powered by API integration.
-
 # Realtime News Portal
 
 A modern, responsive news website that delivers the latest headlines from around the world using real-time data from the NewsAPI.
