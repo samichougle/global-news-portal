@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="assets/WebIcon.png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="./assets/newsLogo.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-items" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-items" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-items" id="politics" onclick="onNavItemClick('politics')"">Politics</li>
+                    <li class="hover-link nav-items" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g Business">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </nav>
+        <main>
+            <div class="cards-container container flex" id="cards-container">
+
+        </main>
+        <template id="template-news-card">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://placehold.co/400x200" alt="news-image" id="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is title</h3>
+                    <h6 class="news-source" id="news-source">End Gadget 26/08/2025</h6>
+                    <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis rem praesentium quis repellat ipsam animi, nostrum amet reiciendis. Molestiae, delectus?</p>
+                </div>
+            </div>
+        </template>
+        <script src="script.js"></script>
+    </body>
+</html>
